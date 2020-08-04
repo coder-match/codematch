@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": false,
+    "es2020": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "google"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": false
+    },
+    "ecmaVersion": 11
+  },
+  "plugins": [],
+  "rules": {
+    "linebreak-style": 0,
+    "object-curly-spacing": [1, "always"]
+  }
+}

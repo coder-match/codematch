@@ -3,6 +3,7 @@ import { Row } from 'reactstrap';
 import IntlMessages from '../../../helpers/IntlMessages';
 import { Colxx, Separator } from '../../../components/common/CustomBootstrap';
 import Breadcrumb from '../../../containers/navs/Breadcrumb';
+import SurveyDetailCard from '../../../components/applications/SurveyDetailCard';
 
 const Second = ({ match }) => (
   <>
@@ -18,6 +19,7 @@ const Second = ({ match }) => (
           <IntlMessages id="menu.second" />
         </p>
       </Colxx>
+      <SurveyDetailCard />
     </Row>
   </>
 );

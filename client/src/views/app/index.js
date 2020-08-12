@@ -14,6 +14,10 @@ const BlankPage = React.lazy(() =>
   import(/* webpackChunkName: "viwes-blank-page" */ './blank-page')
 );
 
+const Search = React.lazy(() =>
+  import(/* webpackChunkName: "viwes-gogo" */ './search')
+);
+
 const App = ({ match }) => {
   return (
     <AppLayout>
@@ -33,6 +37,11 @@ const App = ({ match }) => {
               path={`${match.url}/blank-page`}
               render={(props) => <BlankPage {...props} />}
             />
+            <Route
+              path={`${match.url}/search`}
+              render={(props) => <Search {...props} />}
+            />
+
             <Redirect to="/error" />
           </Switch>
         </Suspense>

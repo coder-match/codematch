@@ -6,6 +6,9 @@ Table of Contents
 02.User Login, Logout, Register
 03.Menu
 04.Error Page
+06.Applications
+  
+  06.02.Survey
 */
 
 module.exports = {
@@ -32,8 +35,8 @@ module.exports = {
   'menu.dashboards': 'Dashboards',
   'menu.gogo': 'Gogo',
   'menu.start': 'Start',
-  'menu.second-menu': 'Second Menu',
-  'menu.second': 'Second',
+  'menu.second-menu': 'Search Devs',
+  'menu.second': 'Search',
   'menu.ui': 'UI',
   'menu.charts': 'Charts',
   'menu.chat': 'Chat',
@@ -47,4 +50,24 @@ module.exports = {
   'pages.error-title': 'Ooops... looks like an error occurred!',
   'pages.error-code': 'Error code',
   'pages.go-back-home': 'GO BACK HOME',
+
+  /* 06.02.Survey */
+  'survey.delete': 'Delete',
+  'survey.edit': 'Edit',
+  'survey.add-new': 'ADD NEW',
+  'survey.add-new-title': 'Add New Survey',
+  'survey.title': 'Title',
+  'survey.category': 'Category',
+  'survey.label': 'Label',
+  'survey.status': 'Status',
+  'survey.cancel': 'Cancel',
+  'survey.submit': 'Submit',
+  'survey.another-action': 'Another action',
+  'survey.display-options': 'Display Options',
+  'survey.orderby': 'Order By : ',
+  'survey.all-surveys': 'All Surveys',
+  'survey.completed-surveys': 'Completed Surveys',
+  'survey.categories': 'Categories',
+  'survey.active-surveys': 'Active Surveys',
+  'survey.labels': 'Labels',
 };

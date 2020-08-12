@@ -18,14 +18,7 @@ const data = [
     id: 'secondmenu',
     icon: 'iconsminds-three-arrow-fork',
     label: 'menu.second-menu',
-    to: `${adminRoot}/second-menu`,
-    subs: [
-      {
-        icon: 'simple-icon-paper-plane',
-        label: 'menu.second',
-        to: `${adminRoot}/second-menu/second`,
-      },
-    ],
+    to: `${adminRoot}/search`,
   },
   {
     id: 'blankpage',

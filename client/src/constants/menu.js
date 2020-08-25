@@ -21,6 +21,12 @@ const data = [
     to: `${adminRoot}/search`,
   },
   {
+    id: 'secondmenu',
+    icon: 'simple-icon-link',
+    label: 'menu.profile',
+    to: `${adminRoot}/profile`,
+  },
+  {
     id: 'blankpage',
     icon: 'iconsminds-bucket',
     label: 'menu.blank-page',

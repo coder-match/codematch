@@ -8,11 +8,7 @@ import classnames from 'classnames';
 import { Colxx } from '../../../components/common/CustomBootstrap';
 import Breadcrumb from '../../../containers/navs/Breadcrumb';
 import QuestionBuilder from '../../../containers/applications/QuestionBuilder';
-// import {
-//   getSurveyDetail,
-//   deleteSurveyQuestion,
-//   saveSurvey,
-// } from '../../../redux/actions';
+import { newSearch } from '../../../redux/actions';
 import SurveyQuotas from '../../../containers/applications/SurveyQuotas';
 import SurveyCharts from '../../../containers/applications/SurveyCharts';
 // import SurveyDetailApplicationMenu from '../../../containers/applications/SurveyDetailApplicationMenu';
@@ -194,6 +190,7 @@ const SurveyDetailApp = ({ match }) => {
               <TabContent activeTab={activeTab}>
                 <TabPane tabId="details">
                   <Row>
+                    <button onClick={newSearch}>Hello There</button>
                     <Colxx xxs="12" lg="8">
                       <ul className="list-unstyled mb-4">
                         {survey.questions.map((item, index) => {
@@ -229,11 +226,12 @@ const SurveyDetailApp = ({ match }) => {
   );
 };
 
-const mapStateToProps = ({ surveyDetailApp }) => {
-  return {};
+const mapStateToProps = () => {
+  return { newSearch };
 };
-export default connect(mapStateToProps, {
-  getSurveyDetailAction: () => ({}),
-  deleteSurveyQuestionAction: () => ({}),
-  saveSurveyAction: () => ({}),
-})(SurveyDetailApp);
+
+const mapDispatchToProps = (dispatch) => {
+  return { newSearch: () => dispatch(newSearch()) };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SurveyDetailApp);

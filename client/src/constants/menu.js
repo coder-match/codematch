@@ -21,7 +21,7 @@ const data = [
     to: `${adminRoot}/search`,
   },
   {
-    id: 'secondmenu',
+    id: 'thirdmenu',
     icon: 'simple-icon-link',
     label: 'menu.profile',
     to: `${adminRoot}/profile`,

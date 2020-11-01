@@ -18,6 +18,10 @@ const Search = React.lazy(() =>
   import(/* webpackChunkName: "viwes-gogo" */ './search')
 );
 
+const Profile = React.lazy(() =>
+  import(/* webpackChunkName: "viwes-gogo" */ './profile')
+);
+
 const App = ({ match }) => {
   return (
     <AppLayout>
@@ -40,6 +44,10 @@ const App = ({ match }) => {
             <Route
               path={`${match.url}/search`}
               render={(props) => <Search {...props} />}
+            />
+             <Route
+              path={`${match.url}/profile`}
+              render={(props) => <Profile {...props} />}
             />
 
             <Redirect to="/error" />
